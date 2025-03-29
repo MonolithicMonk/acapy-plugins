@@ -8,7 +8,9 @@ from acapy_agent.admin.request_context import AdminRequestContext
 from acapy_agent.connections.models.conn_record import ConnRecord, ConnRecordSchema
 from acapy_agent.messaging.models.base import BaseModelError
 from acapy_agent.messaging.models.openapi import OpenAPISchema
-from acapy_agent.protocols.connections.v1_0.routes import (
+
+# Get from connections plugin, since connections is gone in acapy 1.3.0rc+
+from connections.connections.v1_0.routes import (
     ConnectionsConnIdMatchInfoSchema,
 )
 from acapy_agent.storage.error import StorageError, StorageNotFoundError
