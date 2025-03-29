@@ -10,7 +10,7 @@ from acapy_agent.messaging.models.base import BaseModelError
 from acapy_agent.messaging.models.openapi import OpenAPISchema
 
 # Get from connections plugin, since connections is gone in acapy 1.3.0rc+
-from connections.connections.v1_0.routes import (
+from connections.v1_0.routes import (
     ConnectionsConnIdMatchInfoSchema,
 )
 from acapy_agent.storage.error import StorageError, StorageNotFoundError
