@@ -9,8 +9,8 @@ python = "^3.12"
 
 # Define ACA-Py as an optional/extra dependency so it can be
 # explicitly installed with the plugin if desired.
-acapy-agent = {git = "https://github.com/MonolithicMonk/aries-cloudagent-python.git", branch = "debug", optional = true }
-connections = { git = "https://github.com/MonolithicMonk/acapy-plugins.git", branch = "debug", subdirectory = "connections" }
+acapy-agent = {git = "https://github.com/MonolithicMonk/aries-cloudagent-python.git", branch = "dacapy", optional = true }
+connections = { git = "https://github.com/MonolithicMonk/acapy-plugins.git", branch = "dacapy", subdirectory = "connections" }
 
 [tool.poetry.extras]
 aca-py = ["acapy-agent"]
